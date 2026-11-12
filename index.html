@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Portfolio Saya</title>
+  <title>Tribute: Steve Jobs</title>
 </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Tribute: Steve Jobs</title>
+  <link rel="stylesheet" href="css4.css">
+</head>   
 <body>
-  <h1>Halo, ini portfolio saya!</h1>
-  <p>Situs sudah berhasil!</p>
-</body>
-</html>
+  <h1>Steve Jobs (1955 – 2011)</h1>
+  <h2>Siapa Dia?</h2>
+  <p>Steve Jobs adalah pendiri <strong>Apple Inc.</strong>.</p>
 
+<a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Wikipedia</a>   
+<ul>
+  <li>Membuat Apple bersama Steve Wozniak (1976)</li>
+  <li>Meluncurkan iPhone (2007)</li>
+</ul>   
+</body>
+<body>
+
+  <!-- NAVIGASI -->
+  <nav class="nav">
+    <button class="nav-btn active" data-page="home">Beranda</button>
+    <button class="nav-btn" data-page="works">Karya</button>
+    <button class="nav-btn" data-page="quotes">Kutipan</button>
+  </nav>
+
+  <!-- HALAMAN 1: BERANDA -->
+  <div class="page active" id="home">
+    <div class="foto">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Steve_Jobs_Headshot_%28cropped%29.jpg/440px-Steve_Jobs_Headshot_%28cropped%29.jpg" alt="Steve Jobs">
+    </div>
+    <h1>Steve Jobs (1955 – 2011)</h1>
+    <div class="info">
+      <h2>Siapa Dia?</h2>
+      <p>Steve Jobs adalah pendiri <strong>Apple Inc.</strong>, salah satu perusahaan teknologi paling berpengaruh di dunia. Ia dikenal karena visi desain produk yang revolusioner.</p>
+    </div>
+  </div>
+
+  <!-- HALAMAN 2: KARYA -->
+  <div class="page" id="works">
+    <h1>Karya Utama</h1>
+    <div class="info">
+      <ul>
+        <li>Apple (1976) — bersama Steve Wozniak</li>
+        <li>Macintosh (1984)</li>
+        <li>iPhone (2007)</li>
+        <li>iPad (2010)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HALAMAN 3: KUTIPAN -->
+  <div class="page" id="quotes">
+    <h1>Kutipan</h1>
+    <div class="info">
+      <blockquote id="quote-box">"Stay hungry, stay foolish."</blockquote>
+      <button class="nav-btn" id="next-quote">Kutipan Berikutnya →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>   
+</html>   
