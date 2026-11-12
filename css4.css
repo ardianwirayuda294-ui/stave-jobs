@@ -1,0 +1,87 @@
+/* style.css */
+body {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(139,0,0,0.5) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(0,0,139,0.5) 0%, transparent 50%),
+    #111;
+  color: #fff;
+}
+
+.foto {
+  text-align: center;
+}
+
+.foto img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}   
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+blockquote {
+  border-left: 4px solid #fff;
+  padding-left: 15px;
+  font-style: italic;
+  margin: 20px 0;
+  color: #ddd;
+}   
+/* Tambah di style.css */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.nav-btn.active {
+  background: rgba(255,255,255,0.3);
+  border-color: #fff;
+}
+
+/* Halaman: sembunyikan yang bukan active */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}   
